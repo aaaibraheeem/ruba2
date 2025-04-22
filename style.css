@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fdd835;
+    color: rgb(231, 25, 52);
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #e0e0e0;
+}
+
+form {
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.card {
+    background-color: #fff8dc;
+    padding: 20px;
+    border: 1px solid #f4d03f;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card strong {
+    color: #e67e22;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+form input, form select, form button {
+    padding: 0.5em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form label {
+    flex: 1 1 100%;
+}
+
+a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #1976d2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    border: 1px solid #fdd835;
+    padding: 0.5em;
+    text-align: center;
+}
+
+th {
+    background-color: #fff59d;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #fdd835;
+    color: rgb(26, 43, 197);
+    margin-top: 2em;
+}
+
+/* Responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0.5em;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+
+    form input, form select, form button {
+        font-size: 0.9em;
+    }
+
+    a {
+        font-size: 0.9em;
+    }
+}
+
+/* For very small screens (like mobile phones) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    form input, form select, form button {
+        font-size: 0.8em;
+        padding: 0.4em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0.3em;
+    }
+
+    table th, table td {
+        font-size: 0.8em;
+        padding: 0.4em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+
+    .container a {
+        font-size: 0.8em;
+    }
+}
